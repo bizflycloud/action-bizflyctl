@@ -1,0 +1,14 @@
+name: 'GitHub Action for Bizfly Cloud - bizflyctl'
+description: "Use bizflyctl to manage your Bizfly Cloud resources."
+author: Tung Son Do <tungds@bizflycloud.vn>
+branding:
+  icon: 'droplet'
+  color: 'blue'
+inputs:
+  version:
+    description: 'The version of bizflyctl to use.'
+    required: false
+    default: "latest"
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
